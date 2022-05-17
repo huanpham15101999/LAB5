@@ -9,11 +9,8 @@ Yêu cầu:
 Database Replication là một kỹ thuật/nguyên lý thiết kế sử dụng trong việc mở rộng (scale) cơ sở dữ liệu bằng cách duy trì các bản sao của dữ liệu trên nhiều server cơ sở dữ liệu khác nhau
 
 Có 2 loại data replication dựa trên thời gian chuyển đổi dữ liệu giữa các node. Giả sử hệ thống phân tán của chúng ta có 3 server cơ sở dữ liệu A, B, C
-
 * Synchronous: Máy khách (Client) gửi dữ liệu đến server A và dữ liệu sẽ được sao chép đến server B và server C. Sau khi dữ liệu hoàn thành sao chép, các thông báo hoàn thành sẽ được gửi về cho server A và server A sẽ gửi thông báo đến Máy khách
-
   - Ưu điểm: Đảm bảo dữ liệu trên tất cả các server cơ sở dữ liệu là giống nhau - tính đồng nhất giữa các server 
-
   - Khuyết điểm: Server A mất thêm một khoảng thời gian để đợi dữ liệu được đồng bộ và gửi hồi đáp lại cho Máy khách. Nếu có một server nào đó không có hồi đáp hoàn thành sao chép dữ liệu thi toàn bộ quá trình sẽ bị rollback (quay trở lại ban đầu)
 
 * Asynchronous: Máy khách (Client) gửi dữ liệu đến server A, server A sẽ phản hồi các thao tác cho Máy khách, sau đó dữ liệu thay đổi mới được đồng bộ trên server B và C
