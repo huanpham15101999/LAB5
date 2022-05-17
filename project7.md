@@ -8,7 +8,7 @@ Yêu cầu:
 ### Tìm hiểu ###
 Database Replication là một kỹ thuật thiết kế sử dụng trong việc mở rộng (scale) cơ sở dữ liệu bằng cách duy trì các bản sao của dữ liệu trên nhiều server cơ sở dữ liệu khác nhau
 
-Có 2 loại data replication dựa trên thời gian chuyển đổi dữ liệu giữa các node. Giả sử hệ thống phân tán của chúng ta có 3 server cơ sở dữ liệu A, B, C
+Có 2 loại Data Replication dựa trên thời gian chuyển đổi dữ liệu giữa các node. Giả sử hệ thống phân tán của chúng ta có 3 server cơ sở dữ liệu A, B, C
 
 * Synchronous: Máy khách (Client) gửi dữ liệu đến server A và dữ liệu sẽ được sao chép đến server B và server C. Sau khi dữ liệu hoàn thành sao chép, các thông báo hoàn thành sẽ được gửi về cho server A và server A sẽ gửi thông báo đến Máy khách
   - Ưu điểm: Đảm bảo dữ liệu trên tất cả các server cơ sở dữ liệu là giống nhau - tính đồng nhất giữa các server 
