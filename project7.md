@@ -12,15 +12,15 @@ Có 2 loại data replication dựa trên thời gian chuyển đổi dữ liệ
 
 * Synchronous: Máy khách (Client) gửi dữ liệu đến server A và dữ liệu sẽ được sao chép đến server B và server C. Sau khi dữ liệu hoàn thành sao chép, các thông báo hoàn thành sẽ được gửi về cho server A và server A sẽ gửi thông báo đến Máy khách
 
-  - Ưu điểm: Đảm bảo dữ liệu trên tất cả các server cơ sở dữ liệu là giống nhau - tính đồng nhất giữa các server 
+- Ưu điểm: Đảm bảo dữ liệu trên tất cả các server cơ sở dữ liệu là giống nhau - tính đồng nhất giữa các server 
 
-  - Khuyết điểm: Server A mất thêm một khoảng thời gian để đợi dữ liệu được đồng bộ và gửi hồi đáp lại cho Máy khách. Nếu có một server nào đó không có hồi đáp hoàn thành sao chép dữ liệu thi toàn bộ quá trình sẽ bị rollback (quay trở lại ban đầu)
+- Khuyết điểm: Server A mất thêm một khoảng thời gian để đợi dữ liệu được đồng bộ và gửi hồi đáp lại cho Máy khách. Nếu có một server nào đó không có hồi đáp hoàn thành sao chép dữ liệu thi toàn bộ quá trình sẽ bị rollback (quay trở lại ban đầu)
 
 * Asynchronous: Máy khách (Client) gửi dữ liệu đến server A, server A sẽ phản hồi các thao tác cho Máy khách, sau đó dữ liệu thay đổi mới được đồng bộ trên server B và C
 
-  - Ưu điểm: Phản hồi gửi đến Máy khách là ngay lập tức
+- Ưu điểm: Phản hồi gửi đến Máy khách là ngay lập tức
 
-  - Khuyết điểm: Có thể dẫn đến sự không đồng bộ khi công việc sao chép dữ liệu đến các server khác xảy ra các vấn đề về mạng
+- Khuyết điểm: Có thể dẫn đến sự không đồng bộ khi công việc sao chép dữ liệu đến các server khác xảy ra các vấn đề về mạng
 
 Các loại Replication Environment
 
