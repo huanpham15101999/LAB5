@@ -6,7 +6,7 @@ Yêu cầu:
 * Test failover
 
 ### Tìm hiểu ###
-Database Replication là một kỹ thuật/nguyên lý thiết kế sử dụng trong việc mở rộng (scale) cơ sở dữ liệu bằng cách duy trì các bản sao của dữ liệu trên nhiều server cơ sở dữ liệu khác nhau
+Database Replication là một kỹ thuật thiết kế sử dụng trong việc mở rộng (scale) cơ sở dữ liệu bằng cách duy trì các bản sao của dữ liệu trên nhiều server cơ sở dữ liệu khác nhau
 
 Có 2 loại data replication dựa trên thời gian chuyển đổi dữ liệu giữa các node. Giả sử hệ thống phân tán của chúng ta có 3 server cơ sở dữ liệu A, B, C
 
