@@ -134,7 +134,7 @@ Trên mongo0
 
 ![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/yleemw40re_Screenshot%20from%202022-05-18%2013-43-16.png)
 
-Kiểm tra trạng thái Replica Set `# rs.status()`
+Kiểm tra trạng thái Replica Set `> rs.status()`
 
 Lúc này 
 
