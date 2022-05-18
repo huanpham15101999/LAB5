@@ -180,7 +180,7 @@ Kiểm tra Database và Collection vừa tạo
 
 `> rs.status()`
 
-Ta thấy mongo1 với id=1 lúc này đã nắm vai trò **primary**, mongo2 với id=2 nắm vai trò **secondary** (do priority của mongo1 lớn hơn)
+Ta thấy mongo1 với id=1 lúc này đã nắm vai trò **primary**, mongo2 với id=2 nắm vai trò **secondary** (do priority mongo1 = 2 > priority mongo2 = 1)
 
 ![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/5dpmfjpm7m_Screenshot%20from%202022-05-18%2015-30-49.png)
 
