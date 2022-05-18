@@ -148,7 +148,7 @@ Lúc này
 
 ![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/6cxhbq1kd4_Screenshot%20from%202022-05-18%2014-11-40.png)
 
-Xem config Replica Set `# rs.conf()`
+Xem config Replica Set `> rs.conf()`
 
 ### Yêu cầu 2: Tạo Database và Collection
 
@@ -178,7 +178,7 @@ Kiểm tra Database và Collection vừa tạo
 
 **Kiểm tra Replica Set status trên mongo1 và mongo2**
 
-`# rs.status()`
+`> rs.status()`
 
 Ta thấy mongo1 với id=1 lúc này đã nắm vai trò **primary**, mongo2 với id=2 nắm vai trò **secondary** (do priority của mongo1 lớn hơn)
 
