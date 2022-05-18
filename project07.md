@@ -114,10 +114,12 @@ Kiểm tra kết nối giữa các server database trong Replica Set
 
 Trên mongo0 kiểm tra kết nối tới mongo1 và mongo2
 `# nc -zv mongo1.replset.member 27017`
+
 `# nc -zv mongo2.replset.member 27017`
 
 Kết quả thành công 
 `Connection to mongo1.replset.member 27017 port [tcp/*] succeeded!`
+
 `Connection to mongo2.replset.member 27017 port [tcp/*] succeeded!`
 
 **Khởi tạo Replica Set và add các thành viên vào**
