@@ -25,6 +25,8 @@ Các loại Replication Environment
 
 ### Mô hình LAB ###
 
+![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/5p4646kuyh_2.png)
+
 Mô hình gồm 3 server database sử dụng hệ điều hành Ubuntu 20.04
 * mongo0: IP 192.168.18.153
 * mongo1: IP 192.168.18.52
