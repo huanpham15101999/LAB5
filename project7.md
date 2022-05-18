@@ -42,7 +42,7 @@ Khởi động dịch vụ
 
 `# sudo systemctl start mongod`
 
-Kiểm tra trạng thái
+Kiểm tra trạng thái dịch vụ
 
 `# sudo systemctl status mongod`
 
