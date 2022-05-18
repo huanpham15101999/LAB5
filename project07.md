@@ -51,7 +51,7 @@ Kiểm tra trạng thái dịch vụ
 
 `# sudo systemctl status mongod`
 
-Cho phép dịch vụ khởi động cùng hệ thống sau khi boot 
+Cho phép dịch vụ khởi động cùng hệ thống mỗi lần boot lên 
 
 `# sudo systemctl enable mongod`
 
