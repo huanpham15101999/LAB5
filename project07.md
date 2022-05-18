@@ -150,7 +150,7 @@ Lúc này
 
 Xem config Replica Set `> rs.conf()`
 
-### Yêu cầu 2: Tạo Database trên server Primary và kiểm tra đồng bộ trên server Secondary 
+### Yêu cầu 2: Tạo Database trên mongo0 (primary) và kiểm tra đồng bộ trên mongo1 và mongo2 (secondary) 
 
 **Trên server mongo0 (primary)**
 
