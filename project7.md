@@ -25,4 +25,33 @@ Các loại Replication Environment
 
 ### Mô hình LAB ###
 ### Yêu cầu 1 : Dựng MongoDB replicaset
+#### Bước 1: Cài đặt MongoDB trên cả 3 server
+
+Cài đặt
+
+`# curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -`
+
+`# echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d
+/mongodb-org-4.4.list`
+
+`# sudo apt update -y `
+
+`# sudo apt install mongodb-org -y`
+
+Khởi động dịch vụ 
+
+`# sudo systemctl start mongod`
+
+Kiểm tra trạng thái
+
+`# sudo systemctl status mongod`
+
+Cho phép dịch vụ khởi động cùng hệ thống sau khi boot 
+
+`# sudo systemcl enable mongod`
+
+Kiểm tra trạng thái kết nối database, nếu thấy `"ok":1` là thành công 
+
+`# mongo --eval 'db.runCommand({ connectionStatus: 1 })'`
+
 
