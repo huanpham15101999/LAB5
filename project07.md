@@ -194,42 +194,6 @@ Lúc này mongo0 với id=0 lại quay lại vai trò **primary** (do priority =
 
 **=> Failover OK**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*Link tham khảo*
+*https://www.digitalocean.com/community/tutorials/how-to-configure-a-mongodb-replica-set-on-ubuntu-20-04*
 
