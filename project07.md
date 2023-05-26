@@ -132,7 +132,7 @@ Trên mongo0
 
 `# mongo`
 
-`> rs.initiate({_id: "mongo_rs", members:[{_id:1, host: "mongo1:27017", priority:3},{_id:2, host: "mongo2:27017", priority:2}, {_id:3, host: "mongo3:27017", priority: 1}]})`
+`> rs.initiate({_id: "rs0", members:[{_id:0, host: "mongo0.replset.member", priority:3}, {_id:1, host: "mongo1.replset.member", priority:2}, {_id:2, host: "mongo2.replset.member", priority:1}]})`
 
 ![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/yleemw40re_Screenshot%20from%202022-05-18%2013-43-16.png)
 
